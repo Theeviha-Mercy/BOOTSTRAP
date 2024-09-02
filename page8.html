@@ -1,0 +1,133 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .text-custom{
+            font-size: 12px;
+            color: #c9c9c9;
+        }
+        .text-custo{
+            color: #8385c4;
+        }
+         
+        .text-cust{
+            color: #081378;
+        }
+        
+        .text-font{
+            font-size: 16px;
+            color: #747474;
+        }
+
+        .button-custom{ 
+            background-color: #db6e09;
+            color: white;
+            height: 35px;
+            width: 250px;
+            
+        }
+        .text-fo{
+            font-size: 12px;
+            color: #9a9a9a;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-md-6">
+                <h2 class="text-cust fw-bold mb-3">Contact Us</h2>
+                <h4 class=" fw-bold" style="color: #eebd74; ">Get in Touch IAT Technologies</h4>
+                <p class="text-font ">We eagerly anticipate the opportunity to partner with you on your path to success with IAT Technologies</p>
+                <form class="text-fo">
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <div class="form-group fw-bold">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Michael">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group fw-bold">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Johnson">
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email ID</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        <small class="text-custo">Please, enter your validation email</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label fw-bold">Phone number</label>
+                        <div class="input-group">
+                            <span class="input-group-text" type="text">+91</span>
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="Indian">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mb-2">
+                                <label for="zipCode" class="form-label fw-bold">ZIP-code</label>
+                                <input type="text" class="form-control" id="zipCode" placeholder="000000">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="mb-2">
+                                <label for="city" class="form-label fw-bold">City</label>
+                                <select class="form-select" id="city"  data-bs-toggle="tooltip" data-bs-title="Unavailable at this time" data-bs-placement="top">
+                                    <option>Select your city</option>
+                                    <option value="Guindy">Guindy</option>
+                                    <option value="Adyar">Adyar</option>
+                                    <option value="Velachery">Velachery</option>
+                                </select>
+                                <small class="text-custom">input your ZIP-code first</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="content" class="form-label fw-bold">Content</label>
+                        <textarea class="form-control" id="content" rows="2" placeholder="Type here"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn  btn-block  btn-outline-warning button-custom ">Proceed</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-6 m-auto">
+                <div class="map-responsive p-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4399328170954!2d80.23235731471725!3d13.040172990806378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265c47f22c0e7%3A0xa0b11459a3b91151!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1627715477956!5m2!1sen!2sus&t=k" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+</body>
+</html>

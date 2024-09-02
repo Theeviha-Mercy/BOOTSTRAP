@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Programs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card-title {
+            font-size: medium;
+            font-family: sans-serif;
+            font-style: normal;
+            line-height: 16px;
+            color: #0a0a0a;
+        }
+        .card-text {
+            font-size: 11px;
+            color: #858585;
+        }
+        .text-custom {
+            font-size: 12px;
+        }
+        .button-text {
+            font-size: 12px;
+            background-color: white;
+        }
+        .button-text-custom {
+            font-size: 12px;
+            background-color: #022871;
+            color: white;
+        }
+        .text-custom {
+            font-size: 12px;
+            color: #828282;
+        }
+        .card-custom {
+            height: 100%;
+            width: 100%;
+            border-color: #0a0a0a;
+            border-radius: 10px;
+        }
+        .card-img-top {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .date {
+            font-size: 9px;
+        }
+        .text {
+            font-size: 12px;
+        }
+        .text1 {
+            color: #ffa674;
+            font-size: 12px;
+        }
+        .btn {
+            font-size: 10px;
+            color: #685a5a;
+            outline-color: #dedbdb;
+        }
+        .discover-section h2 {
+            font-weight: bold;
+            color: #1c3c80;
+        }
+        .discover-section .btn-outline-warning {
+            border-color: #f19c00;
+            color: #1c3c80;
+        }
+        .discover-section .btn-outline-warning:hover {
+            background-color: #f19c00;
+            color: #fff;
+        }
+        .btn-white {
+            box-shadow: 2px 5px 5px rgb(213, 214, 212);
+        }
+        .btn-custom {
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            .discover-section .d-flex {
+                flex-direction: column;
+                align-items: start;
+            }
+            .btn-rounded {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .card-title, .card-text, .text-custom, .button-text, .button-text-custom {
+                font-size: 14px;
+            }
+            .card-img-top {
+                height: auto;
+            }
+            .card-custom {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .btn-outline-warning {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+        }
+        @media (max-width: 576px) {
+            .d-flex {
+                flex-direction: column;
+                align-items: start;
+            }
+            .btn-custom {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .card-title, .card-text, .text-custom, .button-text, .button-text-custom {
+                font-size: 12px;
+            }
+            .card-img-top {
+                height: auto;
+            }
+            .card-custom {
+                margin-bottom: 20px;
+            }
+            .btn-outline-warning {
+                font-size: 10px; 
+                padding: 1px 4px; 
+                margin-top: 10px; 
+
+            }
+            .btn-cus{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="container discover-section">
+            <div class="row mb-4 d-flex align-items-center">
+                <div class="col-md-8">
+                    <h2>Discover Course & Bootcamp</h2>
+                </div>
+                <div class="col-md-4 d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
+                    <a href="#" class="btn btn-outline-warning fw-bold"><b>Show All</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mb-4">
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-grid-3x3-gap-fill" style="font-size: 2rem;"></i>
+                            <h5 class="text-custom ms-2">Non-Coding Technologies</h5>
+                            <a href="#" class="btn btn-cus btn-warning ms-5 style="box-shadow: 2px 5px 5px rgb(213, 214, 212);">&nearr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-grid-3x3-gap-fill" style="font-size: 2rem;"></i>
+                            <h5 class="text-custom ms-2">Cutting-Edge Technologies</h5>
+                            <a href="#" class="btn btn-cus btn-white ms-5">&nearr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-grid-3x3-gap-fill ms-1" style="font-size: 2rem;"></i>
+                            <h5 class="text-custom ms-3">IoT Solutions</h5>
+                            <a href="#" class="btn btn-cus btn-white ms-5 ">&nearr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-start mb-4 flex-wrap">
+            <button class="btn rounded-pill px-4 py-2 me-2 mb-2 mx-2 btn-custom" style="background-color: #022871; color: #ffffff;">
+                All Program
+            </button>
+            <button class="btn btn-outline-dark rounded-pill mx-2  px-4 py-2 me-2 mb-2 btn-custom">
+                UI/UX Design
+            </button>
+            <button class="btn btn-outline-dark rounded-pill mx-2  px-4 py-2 me-2 mb-2 btn-custom">
+                Product Management
+            </button>
+            <button class="btn btn-outline-dark rounded-pill mx-2  px-4 py-2 me-2 mb-2 btn-custom">
+                Branding Design
+            </button>
+            <button class="btn btn-outline-dark rounded-pill mx-2  px-4 py-2 mb-2 btn-custom">
+                Mobile Development
+            </button>
+            <button class="btn btn-outline-dark rounded-pill mx-2 px-4 py-2 mb-2 btn-custom">
+                Web Development
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxpUNLMxPwndIYY3SCwkTyJznzu2P31H46brurLpTCqUuvll9N" class="card-img-top" alt="Product Management">
+                    <div class="card-body">
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Product Management<br>Basic - Course</b></h5>
+                        <p class="card-text mx-3 mt-2">Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIFrppBl9u02wIjFc3ricufPeyilZU5cMW3mGZwL-MKv647Obq" class="card-img-top" alt="Front End Developer">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Front End Developer<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+   
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Back End Developer<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+ 
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Back End Developer<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+    
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>UX Design Branstroming<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+              
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>UI Design Sketch<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+                   
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Graphic Design - Fundamental Design<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="card-custom h-100 shadow position-relative">
+                    <div class="position-absolute top-0 start-0 m-2">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-person-fill"></i> 120
+                        </span>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAfeExq8-c-1kfFcG-U6x9XUwm-npJt1gwcp2Fm_Pm43iVL6D" class="card-img-top" alt="Back End Developer">
+                    <div class="card-body">
+
+                        <p class="date mb-1 mx-3">1 - 28 July 2022</p>
+                        <h5 class="card-title mx-3 mt-2"><b>Graphic Design - Fundamental Design<br>Basic</b></h5>
+                        <p class="card-text mx-3 mt-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                        <h6>
+                            <span class="text1 ms-3 mt-2 mb-2">$380</span>
+                            <span class="text text-decoration-line-through ms-1 mt-2 mb-2">$500</span>
+                            <a href="#" class="btn btn-outline-warning float-end me-3 mb-3" style="padding: 1px 4px; font-size: 10px;">Show All</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
