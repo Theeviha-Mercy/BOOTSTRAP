@@ -1,133 +1,212 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <title>Contact Form and Map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        .text-custom{
-            font-size: 12px;
-            color: #c9c9c9;
+        html, body {
+            height: 100%;
+            margin: 0;
         }
-        .text-custo{
-            color: #8385c4;
+        .container {
+            height: 100vh;
         }
-         
-        .text-cust{
-            color: #081378;
+        .form-section {
+            padding: 20px;
+            background-color: #ffffff;
         }
-        
-        .text-font{
-            font-size: 16px;
-            color: #747474;
+        .form-section h2 {
+            color: #e8a745;
+            font-weight: 400;
         }
-
-        .button-custom{ 
-            background-color: #db6e09;
+        .form-control:invalid {
+            border-color: #e8e8e8;
+        }
+        .btn-close {
+            background-color: red;
+            border-radius: 50%;
             color: white;
-            height: 35px;
-            width: 250px;
-            
-        }
-        .text-fo{
+            width: 20px;
+            height: 20px;
+            padding: 0;
             font-size: 12px;
-            color: #9a9a9a;
-            
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+            border: none;
         }
-
+        .invalid-feedback {
+            display: none;
+            background-color: #d36c6c;
+            color: #fcf4f4;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        input:invalid + .invalid-feedback {
+            display: block;
+        }
+        .input-container {
+            position: relative;
+        }
+        .input-container input {
+            width: calc(100% - 30px);
+            height: 29px;
+            padding-right: 35px;
+        }
+        .input-container .btn-close {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+        }
+        .form-section select {
+            width: 100%;
+        }
+        .map-container {
+            height: 100vh; 
+            padding-top: 50px;
+            padding-bottom: 0px; 
+            position: relative;
+        }
+        .map-container iframe {
+            width: 80%;
+            height: 90%;
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row ">
-            <div class="col-md-6">
-                <h2 class="text-cust fw-bold mb-3">Contact Us</h2>
-                <h4 class=" fw-bold" style="color: #eebd74; ">Get in Touch IAT Technologies</h4>
-                <p class="text-font ">We eagerly anticipate the opportunity to partner with you on your path to success with IAT Technologies</p>
-                <form class="text-fo">
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <div class="form-group fw-bold">
-                                <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Michael">
+    <section class="pt-5">
+        <div class="container my-0">
+            <div class="row gx-5 gy-3 h-100">
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4 form-section"> 
+                    <h2 class="color" style="color: #081378; font-size: 25px;"><strong>Contact Us</strong></h2>
+                    <h2 class="text" style="color: #e8a847; font-size: 25px;">Get in Touch with IAT Technologies</h2>
+                    <p class="text" style="color: #a5a5a5; font-size: 13px;">We eagerly anticipate the opportunity to partner with you on your path to success with IAT Technologies.</p>
+                    <form id="contactForm">
+                        <div class="row mb-3">
+                            <div class="col-12 col-sm-6 pe-1">
+                                <label for="firstName" class="form-label" style="font-size: 11px; margin-bottom: 5px;">First name<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Michael" required style="height: 30px; width: 100%; font-size: 11px;">
+                            </div>
+                            <div class="col-12 col-sm-6 ps-1">
+                                <label for="lastName" class="form-label" style="font-size: 11px; margin-bottom: 5px;">Last name<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Johnson" required style="height: 30px; width: 100%; font-size: 11px;">
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div class="form-group fw-bold">
-                                <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Johnson">
-                            </div>
-                        </div>
-                    </div>
                         
-                    <div class="mb-3">
-                        <label for="email" class="form-label fw-bold">Email ID</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-                        <small class="text-custo">Please, enter your validation email</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label fw-bold">Phone number</label>
-                        <div class="input-group">
-                            <span class="input-group-text" type="text">+91</span>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="Indian">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="mb-2">
-                                <label for="zipCode" class="form-label fw-bold">ZIP-code</label>
-                                <input type="text" class="form-control" id="zipCode" placeholder="000000">
+                        <div class="mb-3 position-relative">
+                            <label for="email" class="form-label" style="font-size: 11px;">Email ID<span style="color: red;">*</span></label>
+                            <div class="input-container">
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required style="height: 30px; width: 100%; font-size: 11px; border: 1px solid red; padding-right: 30px;">
+                                <button type="button" class="btn-close" id="clear-email" aria-label="Close"></button>
+                            </div>
+                            <div class="invalid-feedback" style="font-size: 11px; color: blue; background-color: transparent;">
+                                Please, enter your valid email.
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div class="mb-2">
-                                <label for="city" class="form-label fw-bold">City</label>
-                                <select class="form-select" id="city"  data-bs-toggle="tooltip" data-bs-title="Unavailable at this time" data-bs-placement="top">
-                                    <option>Select your city</option>
-                                    <option value="Guindy">Guindy</option>
-                                    <option value="Adyar">Adyar</option>
-                                    <option value="Velachery">Velachery</option>
+                        
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="phone" class="form-label" style="font-size: 11px;">Phone number<span style="color: red;">*</span></label>
+                                <div class="position-relative" style="width: 100%;">
+                                    <input type="tel" class="form-control" id="phone" placeholder="91+" required style="height: 30px; width: 100%; font-size: 11px; padding-right: 60px;">
+                                    <span class="position-absolute" style="right: 10px; top: 50%; transform: translateY(-50%); font-size: 11px;">Indian</span>
+                                </div>
+                                <small class="form-text text-muted" style="font-size: 11px;">Enter a valid number</small>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-12 col-sm-6 pe-1">
+                                <label for="zipcode" class="form-label" style="font-size: 11px;">ZIP-code<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="zipcode" placeholder="000000" required style="height: 30px; width: 100%; font-size: 11px;">
+                            </div>
+                            <div class="col-12 col-sm-6 ps-1">
+                                <label for="city" class="form-label" style="font-size: 11px;">City<span style="color: red;">*</span></label>
+                                <select class="form-select" id="city" required style="height: 30px; width: 100%; font-size: 11px;">
+                                    <option value="" disabled selected>Select your city</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Madurai">Madurai</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Salem">Salem</option>
+                                    <option value="Tirunelveli">Tirunelveli</option>
+                                    <option value="Thoothukudi">Thoothukudi</option>
+                                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                                    <option value="Kancheepuram">Kancheepuram</option>
+                                    <option value="Nagapattinam">Nagapattinam</option>
+                                    <option value="Vellore">Vellore</option>
+                                    <option value="Thanjavur">Thanjavur</option>
+                                    <option value="Cuddalore">Cuddalore</option>
+                                    <option value="Erode">Erode</option>
+                                    <option value="Dindigul">Dindigul</option>
+                                    <option value="Hosur">Hosur</option>
+                                    <option value="Kanchipuram">Kanchipuram</option>
+                                    <option value="Rajapalayam">Rajapalayam</option>
+                                    <option value="Kumbakonam">Kumbakonam</option>
+                                    <option value="Pudukkottai">Pudukkottai</option>
+                                    <option value="Sivaganga">Sivaganga</option>
+                                    <option value="Karaikudi">Karaikudi</option>
+                                    <option value="Neyveli">Neyveli</option>
+                                    <option value="Ambur">Ambur</option>
+                                    <option value="Nagercoil">Nagercoil</option>
+                                    <option value="Alandur">Alandur</option>
+                                    <option value="Kurichi">Kurichi</option>
+                                    <option value="Tiruvottiyur">Tiruvottiyur</option>
+                                    <option value="Dharmapuri">Dharmapuri</option>
+                                    <option value="Madhavaram">Madhavaram</option>
+                                    <option value="Tambaram">Tambaram</option>
+                                    <option value="Pallavaram">Pallavaram</option>
+                                    <option value="Chengalpattu">Chengalpattu</option>
+                                    <option value="Kanniyakumari">Kanniyakumari</option>
+                                    <option value="Vaniyambadi">Vaniyambadi</option>
+                                    <option value="Add New">Add New</option>
                                 </select>
-                                <small class="text-custom">input your ZIP-code first</small>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="content" class="form-label fw-bold">Content</label>
-                        <textarea class="form-control" id="content" rows="2" placeholder="Type here"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn  btn-block  btn-outline-warning button-custom ">Proceed</button>
-                    </div>
-                    
-                </form>
-            </div>
-            <div class="col-md-6 m-auto">
-                <div class="map-responsive p-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4399328170954!2d80.23235731471725!3d13.040172990806378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265c47f22c0e7%3A0xa0b11459a3b91151!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1627715477956!5m2!1sen!2sus&t=k" 
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                        <div class="mb-3">
+                            <label for="content" class="form-label" style="font-size: 11px;">Content</label>
+                            <textarea class="form-control" id="content" rows="2" placeholder="Type here" required style="font-size: 11px; height: 40px; width: 100%;"></textarea>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn text-white" style="background-color: #db6e09; font-size: 11px; padding: 5px 15px; height: 35px; width: 120px;">Proceed</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-7 col-xl-8 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.990017372271!2d-84.38897948564706!3d33.7489952806571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50687d8a20613%3A0x8e9b43b5c5b263f1!2sGeorgia%20State%20Capitol!5e0!3m2!1sen!2sus!4v1683832354462!5m2!1sen!2sus" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        // JavaScript to handle the email input clear button
+        document.getElementById('clear-email').addEventListener('click', function() {
+            document.getElementById('email').value = '';
+            document.getElementById('email').focus();
+        });
 
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        document.getElementById('clear-email').addEventListener('click', function() {
+            document.getElementById('email').value = '';
+        });
+
+        document.getElementById('city').addEventListener('change', function() {
+            if (this.value === 'Add New') {
+                var newCityInput = document.createElement('input');
+                newCityInput.type = 'text';
+                newCityInput.className = 'form-control';
+                newCityInput.placeholder = 'Enter your city';
+                newCityInput.style.fontSize = '11px';
+                newCityInput.style.height = '30px';
+                newCityInput.id = 'newCity';
+                this.parentNode.replaceChild(newCityInput, this);
+            }
+        });
     </script>
-
 </body>
 </html>
